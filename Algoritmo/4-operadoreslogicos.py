@@ -14,7 +14,7 @@
 # print(msg)
 
 # # um algoritmo de disparo de alarme
-# o alarme dispara se a porta ou a janela forem abertas
+# o alarme dispara se a porta ou as janelas forem abertas
 
 # porta = 'f'
 # janela = 'f'
