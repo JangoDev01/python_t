@@ -7,7 +7,7 @@ while True:
     print("=======DIGITE X PARA SAIR=======")
     
     nome = input("Digite o seu nome: ")
-    if nome == 'x' or nome == 'X':
+    if nome == 'x' or nome == 'X': # termina o programa quando digitado x 
         break
 
     msg = input("Digite a sua mensagem: ")
