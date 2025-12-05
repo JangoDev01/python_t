@@ -2,7 +2,7 @@
 
 ### Ler conteudo de arquivos de texto
 
-# manipulador = open('C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste do mod_os\\arquivo_teste.txt', 'r', encoding='utf-8')
+# manipulador = open('C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste pra manipulacao\\arquivo_teste.txt', 'r', encoding='utf-8')
 
 ## ler todo o conteudo de texto do arquivo 
 # print(f'\nMétodo read():\n')
@@ -16,7 +16,7 @@
 # texto_termo = input('Qual termo deseja buscar no arquivo? ')
 
 # try:
-#     manipulador_leitor = open('C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste do mod_os\\arquivo_teste.txt', 'r', encoding='utf-8')
+#     manipulador_leitor = open('C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste pra manipulacao\\arquivo_teste.txt', 'r', encoding='utf-8')
 #     for linha in manipulador_leitor:
 #         """
 #             -retira o ultimo caractere da linha que nesse caso é a quebra
@@ -41,7 +41,7 @@
 # texto_escrito = input('Digite o texto que deseja adicionar no arquivo: ')
 
 # try:
-#     manipulador_escritor = open('C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste do mod_os\\arquivo_teste.txt', 'a', encoding='utf-8')
+#     manipulador_escritor = open('C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste pra manipulacao\\arquivo_teste.txt', 'a', encoding='utf-8')
 #     manipulador_escritor.write(f'\n{texto_escrito}')
 #     print(texto_escrito)
 # except IOError:
@@ -55,7 +55,7 @@ nome_arquivo = input('Digite o nome do arquivo (sem espaçamento no nome): ')
 texto_escrito = input('Digite o texto que deseja adicionar no arquivo: ')
 
 try:
-    criador_de_arquivos = open(f'C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste do mod_os\\{nome_arquivo}', 'w', encoding='utf-8')
+    criador_de_arquivos = open(f'C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste pra manipulacao\\{nome_arquivo}', 'w', encoding='utf-8')
     criador_de_arquivos.write(f'\n{texto_escrito}')
 except IOError:
     print(f'Não foi possível criar o arquivo')
@@ -64,7 +64,7 @@ else:
 
 # Ler o arquivo
 try:
-    criador_de_arquivos = open(f'C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste do mod_os\\{nome_arquivo}', 'r', encoding='utf-8')
+    criador_de_arquivos = open(f'C:\\Users\\Administrator\\Dev Zone\\Python\\arquivos teste pra manipulacao\\{nome_arquivo}', 'r', encoding='utf-8')
     print(f'\nExibindo o conteudo do arquivo {nome_arquivo}: \n{criador_de_arquivos.read()}')
 except IOError:
     print(f'Não foi possível criar o arquivo')
