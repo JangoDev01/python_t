@@ -1,0 +1,5 @@
+O módulo OS do Python é uma ferramenta fundamental para interagir com o sistema operacional.
+Ele permite que desenvolvedores acessem funcionalidades do sistema, como variáveis de ambiente, operações com arquivos e diretórios, além de comandos específicos do SO.
+Este módulo é essencial para criar programas que funcionem de forma robusta em diferentes plataformas, como Windows, Linux e macOS.
+mais um
+
