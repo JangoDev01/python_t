@@ -105,7 +105,7 @@ lm.fit(ngrams_pad, vocab) # fazendo os ajustes probabilisticos
     gerando trechos de textos usando o metodo 
     lm.generate - recebe como parametro o tamanho da sequencia
             que a gente deseja gerar e o contexto, ou seja
-            com base em algum token...
+            com base em algum token....
 """
 texto_dig = str(input("Digite um palavra para ver o que vem a seguir: "))
 print(lm.generate(5,text_seed=[texto_dig])) #
