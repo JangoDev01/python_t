@@ -93,7 +93,7 @@ for verso in poema:
 
 # print(texto_tok)
 
-ngrams = 3
+ngrams = 5
 ngrams_pad, vocab = padded_everygram_pipeline(ngrams, texto_tok)
 
 ########################################### treinando o modelo de linguagem
@@ -112,10 +112,12 @@ print(lm.generate(5,text_seed=[texto_dig])) #
 # print(lm.generate(5,text_seed=[texto_dig], random_seed=3)) # gera sempre os mesmos valores
 
 ##
-texto_contexto = str(input(f"Digite um caractere de contexto para o calculo probabilistico: "))
+for i in range(6):
+    print("=======================================================")
+    texto_contexto = str(input(f"\nDigite um caractere de contexto para o calculo probabilistico: "))
 
-### verificando a probabilidade de uma palvra
-# print(lm.score(texto_dig))
+    ### verificando a probabilidade de uma palvra
+    # print(lm.score(texto_dig))
 
-### verificando a probabilidade de uma palvra depois de uma outra
-print(f"As chances de {[texto_contexto]} aparecer depois de {[texto_dig]} é de: ", lm.score(texto_contexto, context=[texto_dig]))
+    ### verificando a probabilidade de uma palvra depois de uma outra
+    print(f"As chances de {[texto_contexto]} aparecer depois de {[texto_dig]} é de: ", lm.score(texto_contexto, context=[texto_dig]))
